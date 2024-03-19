@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		DD7803BD2BA8D513007770A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803BC2BA8D513007770A1 /* AppDelegate.swift */; };
 		DD7803BF2BA8D513007770A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */; };
-		DD7803C12BA8D513007770A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803C02BA8D513007770A1 /* ViewController.swift */; };
 		DD7803C62BA8D515007770A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7803C52BA8D515007770A1 /* Assets.xcassets */; };
 		DD7803C92BA8D515007770A1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DD7803C82BA8D515007770A1 /* Base */; };
+		DD7803D12BA8D63D007770A1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D02BA8D63D007770A1 /* InfoViewController.swift */; };
+		DD7803D32BA8D656007770A1 /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D22BA8D656007770A1 /* HabitsViewController.swift */; };
+		DD7803D52BA8D673007770A1 /* HabitsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D42BA8D673007770A1 /* HabitsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD7803B92BA8D513007770A1 /* MyHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7803BC2BA8D513007770A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD7803C02BA8D513007770A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD7803C52BA8D515007770A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD7803C82BA8D515007770A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD7803CA2BA8D515007770A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7803D02BA8D63D007770A1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		DD7803D22BA8D656007770A1 /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
+		DD7803D42BA8D673007770A1 /* HabitsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitsStore.swift; path = "../../iosui-diplom-main/HabitsStore.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			children = (
 				DD7803BC2BA8D513007770A1 /* AppDelegate.swift */,
 				DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */,
-				DD7803C02BA8D513007770A1 /* ViewController.swift */,
+				DD7803D22BA8D656007770A1 /* HabitsViewController.swift */,
+				DD7803D42BA8D673007770A1 /* HabitsStore.swift */,
+				DD7803D02BA8D63D007770A1 /* InfoViewController.swift */,
 				DD7803C52BA8D515007770A1 /* Assets.xcassets */,
 				DD7803C72BA8D515007770A1 /* LaunchScreen.storyboard */,
 				DD7803CA2BA8D515007770A1 /* Info.plist */,
@@ -134,9 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7803C12BA8D513007770A1 /* ViewController.swift in Sources */,
 				DD7803BD2BA8D513007770A1 /* AppDelegate.swift in Sources */,
+				DD7803D12BA8D63D007770A1 /* InfoViewController.swift in Sources */,
 				DD7803BF2BA8D513007770A1 /* SceneDelegate.swift in Sources */,
+				DD7803D52BA8D673007770A1 /* HabitsStore.swift in Sources */,
+				DD7803D32BA8D656007770A1 /* HabitsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
