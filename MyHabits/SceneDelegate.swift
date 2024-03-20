@@ -43,7 +43,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                                                      image: UIImage(systemName: "info.circle.fill"),
                                                      tag: 1)
         
-        tabBarController.tabBar.tintColor = UIColor(named: "PurpleColor")
+        tabBarController.tabBar.tintColor = UIColor(named: "PurpleHabits")
         tabBarController.tabBar.backgroundColor = UIColor(named: "LigthGray")
         
         window.rootViewController = tabBarController
