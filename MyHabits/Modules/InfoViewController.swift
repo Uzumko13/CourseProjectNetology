@@ -1,9 +1,3 @@
-//
-//  InfoViewController.swift
-//  MyHabits
-//
-//  Created by Иван Беляев on 18.03.2024.
-//
 
 import UIKit
 
@@ -30,6 +24,8 @@ class InfoViewController: UIViewController {
         
         return contentView
     }()
+    
+    
 
     // MARK: - Lifecycle
     
@@ -92,19 +88,23 @@ class InfoViewController: UIViewController {
             label.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 22)
         ])
         
-        let labelText = UILabel()
+        let labelText = UITextView(frame: contentView.frame)
         
         labelText.translatesAutoresizingMaskIntoConstraints = false
         labelText.font = UIFont.systemFont(ofSize: 17, weight: .regular)
         labelText.textColor = UIColor.black
-        labelText.text = "Прохождение этапов, за которые за 21 день вырабатывается привычка, подчиняется следующему алгоритму:"
+        labelText.text = """
+Прохождение этапов, за которые за 21
+ день вырабатывается привычка,
+ подчиняется следующему алгоритму:
+"""
         
         contentView.addSubview(labelText)
         
         NSLayoutConstraint.activate([
             labelText.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             labelText.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            labelText.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 16)
+            labelText.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 16),
         ])
     }
     

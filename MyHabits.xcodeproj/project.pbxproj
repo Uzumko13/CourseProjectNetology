@@ -13,8 +13,9 @@
 		DD7803C92BA8D515007770A1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DD7803C82BA8D515007770A1 /* Base */; };
 		DD7803D12BA8D63D007770A1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D02BA8D63D007770A1 /* InfoViewController.swift */; };
 		DD7803D32BA8D656007770A1 /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D22BA8D656007770A1 /* HabitsViewController.swift */; };
-		DD7803D52BA8D673007770A1 /* HabitsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D42BA8D673007770A1 /* HabitsStore.swift */; };
 		DD7803D92BAA37B3007770A1 /* InfoPostExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D82BAA37B3007770A1 /* InfoPostExample.swift */; };
+		DD7803DC2BAB1953007770A1 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803DB2BAB1953007770A1 /* TabViewController.swift */; };
+		DD7803E52BAB1CBD007770A1 /* HabitsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803E42BAB1CBD007770A1 /* HabitsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		DD7803CA2BA8D515007770A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7803D02BA8D63D007770A1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		DD7803D22BA8D656007770A1 /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
-		DD7803D42BA8D673007770A1 /* HabitsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitsStore.swift; path = "../../iosui-diplom-main/HabitsStore.swift"; sourceTree = "<group>"; };
 		DD7803D82BAA37B3007770A1 /* InfoPostExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPostExample.swift; sourceTree = "<group>"; };
+		DD7803DB2BAB1953007770A1 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		DD7803E42BAB1CBD007770A1 /* HabitsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitsStore.swift; path = "../../../../iosui-diplom-main/HabitsStore.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +62,58 @@
 		DD7803BB2BA8D513007770A1 /* MyHabits */ = {
 			isa = PBXGroup;
 			children = (
-				DD7803BC2BA8D513007770A1 /* AppDelegate.swift */,
-				DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */,
-				DD7803D22BA8D656007770A1 /* HabitsViewController.swift */,
-				DD7803D42BA8D673007770A1 /* HabitsStore.swift */,
-				DD7803D02BA8D63D007770A1 /* InfoViewController.swift */,
+				DD7803DE2BAB1BEB007770A1 /* Modules */,
+				DD7803DF2BAB1BFD007770A1 /* TabBar */,
 				DD7803C52BA8D515007770A1 /* Assets.xcassets */,
 				DD7803C72BA8D515007770A1 /* LaunchScreen.storyboard */,
 				DD7803CA2BA8D515007770A1 /* Info.plist */,
-				DD7803D82BAA37B3007770A1 /* InfoPostExample.swift */,
 			);
 			path = MyHabits;
+			sourceTree = "<group>";
+		};
+		DD7803DA2BAB1498007770A1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DD7803BC2BA8D513007770A1 /* AppDelegate.swift */,
+				DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DD7803DD2BAB1BD8007770A1 /* HabitsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				DD7803E42BAB1CBD007770A1 /* HabitsStore.swift */,
+				DD7803D22BA8D656007770A1 /* HabitsViewController.swift */,
+			);
+			path = HabitsFlow;
+			sourceTree = "<group>";
+		};
+		DD7803DE2BAB1BEB007770A1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DD7803DA2BAB1498007770A1 /* AppDelegate */,
+				DD7803E12BAB1C23007770A1 /* InfoFlow */,
+				DD7803DD2BAB1BD8007770A1 /* HabitsFlow */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DD7803DF2BAB1BFD007770A1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DD7803DB2BAB1953007770A1 /* TabViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DD7803E12BAB1C23007770A1 /* InfoFlow */ = {
+			isa = PBXGroup;
+			children = (
+				DD7803D02BA8D63D007770A1 /* InfoViewController.swift */,
+				DD7803D82BAA37B3007770A1 /* InfoPostExample.swift */,
+			);
+			name = InfoFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,11 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7803E52BAB1CBD007770A1 /* HabitsStore.swift in Sources */,
 				DD7803BD2BA8D513007770A1 /* AppDelegate.swift in Sources */,
 				DD7803D12BA8D63D007770A1 /* InfoViewController.swift in Sources */,
 				DD7803BF2BA8D513007770A1 /* SceneDelegate.swift in Sources */,
-				DD7803D52BA8D673007770A1 /* HabitsStore.swift in Sources */,
 				DD7803D92BAA37B3007770A1 /* InfoPostExample.swift in Sources */,
+				DD7803DC2BAB1953007770A1 /* TabViewController.swift in Sources */,
 				DD7803D32BA8D656007770A1 /* HabitsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
