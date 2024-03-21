@@ -42,7 +42,7 @@ class TabBarViewController: UITabBarController {
         habitsViewController.tabBarItem = habits
         infoViewController.tabBarItem = info
         UITabBar.appearance().tintColor = UIColor(named: "PurpleHabits")
-        UITabBar.appearance().backgroundColor = UIColor(named: "LigthGray")
+        UITabBar.appearance().backgroundColor = UIColor(named: "GrayTabBar")
     }
 }
 
