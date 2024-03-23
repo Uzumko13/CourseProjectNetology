@@ -1,13 +1,7 @@
-//
-//  HabitViewController.swift
-//  MyHabits
-//
-//  Created by Иван Беляев on 21.03.2024.
-//
 
 import UIKit
 
-class HabitDetailsViewController: UIViewController {
+class DetailsHabitsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +12,7 @@ class HabitDetailsViewController: UIViewController {
 
     //MARK: - Extention
 
-private extension HabitDetailsViewController {
+private extension DetailsHabitsViewController {
     
     //MARK: - Config view
     
@@ -27,7 +21,7 @@ private extension HabitDetailsViewController {
     }
     
     func setupNavigationBarDetails() {
-        navigationItem.title = 
+        navigationItem.title = ""
         navigationController?.navigationBar.barTintColor = UIColor(named: "GrayHeader")
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.tintColor = UIColor(named: "PurpleHabits")
@@ -38,7 +32,7 @@ private extension HabitDetailsViewController {
     //MARK: - Action
     
     @objc func buttonCreate() {
-        let createHabitView = EditHabitViewController()
-        navigationController?.pushViewController((createHabitView), animated: true)
+        let editHabitView = HabitsViewController()
+        navigationController?.pushViewController((editHabitView), animated: true)
     }
 }

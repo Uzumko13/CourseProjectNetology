@@ -5,8 +5,8 @@ class InfoViewController: UIViewController {
     
     //MARK: - Info Data
     
-    private var infoTitle = title3
-    private var info = infoText
+    private var infoTitle = InfoData.title3
+    private var info = InfoData.infoText
     
     //MARK: Subviews
     
