@@ -1,12 +1,9 @@
 
 import UIKit
 
-protocol DetailsHabitsViewProtocol {
-    func onHabitUpdate(habit: Habit)
-    func onHabitDelete()
-}
-
-class DetailsHabitsViewController: UIViewController {
+class DetailsHabitsViewController: UIViewController, HabitDetailsViewProtocol {
+    
+    //MARK: - Properties
     
     var habit = Habit(name: "Выпить стакан воды перед завтраком", date: Date(), color: .systemRed)
     
@@ -30,13 +27,6 @@ class DetailsHabitsViewController: UIViewController {
         return tableView
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        navigationController?.navigationBar.isHidden = false
-        setupLayout()
-    }
-    
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -44,13 +34,21 @@ class DetailsHabitsViewController: UIViewController {
         formatter.doesRelativeDateFormatting = true
         return formatter
     }()
+    
+    //MARK: - Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        navigationController?.navigationBar.isHidden = false
+        setupLayout()
+    }
+    
 }
 
     //MARK: - Extention
 
 private extension DetailsHabitsViewController {
-    
-    //MARK: - Config view
     
     func setupLayout() {
         navigationController?.navigationBar.tintColor = .purpleHabits

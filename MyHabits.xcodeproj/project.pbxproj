@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD48BB6A2BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48BB692BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift */; };
+		DD48BB6C2BBF4BA2002F1680 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48BB6B2BBF4BA2002F1680 /* Protocols.swift */; };
 		DD7803BD2BA8D513007770A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803BC2BA8D513007770A1 /* AppDelegate.swift */; };
 		DD7803BF2BA8D513007770A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */; };
 		DD7803C62BA8D515007770A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7803C52BA8D515007770A1 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		DD48BB692BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHabitsTableViewCell.swift; sourceTree = "<group>"; };
+		DD48BB6B2BBF4BA2002F1680 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		DD7803B92BA8D513007770A1 /* MyHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7803BC2BA8D513007770A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				DDCBFDC12BADFE0E002E8FA0 /* Extentions.swift */,
+				DD48BB6B2BBF4BA2002F1680 /* Protocols.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD48BB6C2BBF4BA2002F1680 /* Protocols.swift in Sources */,
 				DD7803E52BAB1CBD007770A1 /* HabitsStore.swift in Sources */,
 				DD7803BD2BA8D513007770A1 /* AppDelegate.swift in Sources */,
 				DD7803D12BA8D63D007770A1 /* InfoViewController.swift in Sources */,

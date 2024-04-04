@@ -1,10 +1,6 @@
 
 import UIKit
 
-protocol UpdateCollectionProtocol {
-    func onCollectionUpdate()
-}
-
 class MyHabitsViewController: UIViewController, UpdateCollectionProtocol {
     
     private lazy var habitStore: HabitsStore = HabitsStore.shared
@@ -35,35 +31,62 @@ class MyHabitsViewController: UIViewController, UpdateCollectionProtocol {
         return button
     } ()
     
+    private lazy var todayLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Сегодня"
+        label.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        label.textColor = .black
+        
+        return label
+    }()
+    
     //MARK: - Lifecycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "LigthGray2")
-        setupNavigationBar()
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = UIColor(named: "LigthGray2")
+//        setupNavigationBar()
+//    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        onCollectionUpdate()
+        setupLayout()
+
+        navigationController?.navigationBar.isHidden = true
+    }
     
     //MARK: - Config view
     
-    
     func onCollectionUpdate() {
         habitsCollectionView.reloadData()
-    }
-    func addSubview() {
-        
     }
 }
 //MARK: - Extention
 
 private extension MyHabitsViewController {
     
-    func setupNavigationBar() {
-        navigationController?.navigationBar.barTintColor = UIColor(named: "GrayHeader")
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: .append, style: .plain, target: self, action: #selector(tapAddButton))
-        navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "PurpleHabits")
-        navigationItem.title = "Сегодня"
+    func setupLayout() {
+        view.addSubview(habitsCollectionView)
+        view.addSubview(todayLabel)
+        view.addSubview(addButton)
+
+        NSLayoutConstraint.activate([
+            addButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
+            addButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8),
+            addButton.heightAnchor.constraint(equalToConstant: 30),
+            addButton.widthAnchor.constraint(equalToConstant: 30),
+            
+            habitsCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            habitsCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            habitsCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            habitsCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            todayLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            todayLabel.bottomAnchor.constraint(equalTo: habitsCollectionView.topAnchor, constant: -8)
+        ])
     }
     
     //MARK: - Action
@@ -72,20 +95,12 @@ private extension MyHabitsViewController {
         let viewController = CreateHabitsViewController()
         let updateCollectionCallback: Void = habitsCollectionView.reloadData()
         viewController.updateCollectionCallback = self
-        viewController.modalTransitionStyle = .coverVertical
         viewController.modalPresentationStyle = .fullScreen
+        viewController.modalTransitionStyle = .coverVertical
         self.navigationController?.present(viewController, animated: true, completion: nil)
     }
     
-//    @objc func buttonPressed(_ sender: UIButton) {
-//        let createHabitView = CreateHabitsViewController()
-//        createHabitView.modalPresentationStyle = .fullScreen
-//        createHabitView.modalTransitionStyle = .coverVertical
-//        present(createHabitView, animated: true)
-//    }
 }
-
-//MARK: - Extention
 
 extension MyHabitsViewController: UICollectionViewDataSource {
 

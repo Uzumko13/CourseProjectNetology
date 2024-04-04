@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol HabitTapCallback {
-    func onTap(position: Int)
-}
-
 class MyHabitsCollectionViewCell: UICollectionViewCell {
         
         var habitTapCallback: (() -> Void)?
