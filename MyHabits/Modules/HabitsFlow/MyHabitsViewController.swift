@@ -9,15 +9,15 @@ class MyHabitsViewController: UIViewController {
     
     private lazy var habitsCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        let collectionCiew = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionCiew.translatesAutoresizingMaskIntoConstraints = false
-        collectionCiew.backgroundColor = UIColor.lightGray
-        collectionCiew.register(ProgressCollectionViewCell.self, forCellWithReuseIdentifier: ProgressCollectionViewCell.reuseID)
-        collectionCiew.register(MyHabitsCollectionViewCell.self, forCellWithReuseIdentifier: MyHabitsCollectionViewCell.reuseID)
-        collectionCiew.delegate = self
-        collectionCiew.dataSource = self
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = UIColor.lightGray
+        collectionView.register(ProgressCollectionViewCell.self, forCellWithReuseIdentifier: ProgressCollectionViewCell.reuseID)
+        collectionView.register(MyHabitsCollectionViewCell.self, forCellWithReuseIdentifier: MyHabitsCollectionViewCell.reuseID)
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
-        return collectionCiew
+        return collectionView
     }()
     
     private lazy var addButton: UIButton = {
@@ -61,8 +61,8 @@ private extension MyHabitsViewController {
     
     @objc func tapAddButton() {
         let viewController = CreateHabitsViewController()
-//        let updateCollectionCallback: Void = habitsCollectionView.reloadData()
-//        vc.updateCollectionCallback = self
+        let updateCollectionCallback: Void = habitsCollectionView.reloadData()
+        viewController.updateCollectionCallback = self
         viewController.modalTransitionStyle = .coverVertical
         viewController.modalPresentationStyle = .fullScreen
         self.navigationController?.present(viewController, animated: true, completion: nil)
@@ -77,7 +77,7 @@ private extension MyHabitsViewController {
 }
 
 //MARK: - Extention
-extension HabitsViewController: UICollectionViewDataSource {
+extension MyHabitsViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (indexPath.section == 0) {
@@ -124,7 +124,7 @@ extension HabitsViewController: UICollectionViewDataSource {
     }
 }
 
-extension HabitsViewController: UICollectionViewDelegateFlowLayout {
+extension MyHabitsViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(
         _ collectionView: UICollectionView,
