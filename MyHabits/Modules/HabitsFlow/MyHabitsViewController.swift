@@ -1,7 +1,11 @@
 
 import UIKit
 
-class MyHabitsViewController: UIViewController {
+protocol UpdateCollectionProtocol {
+    func onCollectionUpdate()
+}
+
+class MyHabitsViewController: UIViewController, UpdateCollectionProtocol {
     
     private lazy var habitStore: HabitsStore = HabitsStore.shared
     
@@ -38,13 +42,18 @@ class MyHabitsViewController: UIViewController {
         view.backgroundColor = UIColor(named: "LigthGray2")
         setupNavigationBar()
     }
-}
+    
+    
     //MARK: - Config view
     
+    
+    func onCollectionUpdate() {
+        habitsCollectionView.reloadData()
+    }
     func addSubview() {
         
     }
-    
+}
 //MARK: - Extention
 
 private extension MyHabitsViewController {
@@ -77,6 +86,7 @@ private extension MyHabitsViewController {
 }
 
 //MARK: - Extention
+
 extension MyHabitsViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

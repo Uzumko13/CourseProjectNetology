@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD48BB6A2BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48BB692BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift */; };
 		DD7803BD2BA8D513007770A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803BC2BA8D513007770A1 /* AppDelegate.swift */; };
 		DD7803BF2BA8D513007770A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */; };
 		DD7803C62BA8D515007770A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7803C52BA8D515007770A1 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD48BB692BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHabitsTableViewCell.swift; sourceTree = "<group>"; };
 		DD7803B92BA8D513007770A1 /* MyHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7803BC2BA8D513007770A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				DDCBFDBE2BADFD8A002E8FA0 /* ProgressCollectionViewCell.swift */,
 				DD7803E82BACBE65007770A1 /* DetailsHabitsViewController.swift */,
 				DD7803ED2BACD7A6007770A1 /* CreateHabitsViewController.swift */,
+				DD48BB692BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift */,
 			);
 			path = HabitsFlow;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				DDCBFDBF2BADFD8A002E8FA0 /* ProgressCollectionViewCell.swift in Sources */,
 				DD7803BF2BA8D513007770A1 /* SceneDelegate.swift in Sources */,
 				DDCBFDC42BAE151F002E8FA0 /* MyHabitsCollectionViewCell.swift in Sources */,
+				DD48BB6A2BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift in Sources */,
 				DD7803D92BAA37B3007770A1 /* Info.swift in Sources */,
 				DDCBFDC22BADFE0E002E8FA0 /* Extentions.swift in Sources */,
 				DD7803DC2BAB1953007770A1 /* TabViewController.swift in Sources */,
