@@ -58,7 +58,9 @@ private extension DetailsHabitsViewController {
             target: self,
             action: #selector(createButtonPressed)
         )
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "Сегодня", style: .done, target: nil, action: nil)
         navigationItem.title = habit.name
+
         
         view.addSubview(habitTableView)
         NSLayoutConstraint.activate([

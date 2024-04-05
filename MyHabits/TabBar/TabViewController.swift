@@ -39,7 +39,3 @@ class TabBarViewController: UITabBarController {
         UITabBar.appearance().backgroundColor = UIColor(named: "GrayTabBar")
     }
 }
-
-//MARK:  - Extension
-
-

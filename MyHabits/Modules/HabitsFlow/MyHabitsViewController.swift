@@ -11,7 +11,7 @@ class MyHabitsViewController: UIViewController, UpdateCollectionProtocol {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = UIColor.lightGray
+        collectionView.backgroundColor = .ligthGray2//UIColor.lightGray
         collectionView.register(ProgressCollectionViewCell.self, forCellWithReuseIdentifier: ProgressCollectionViewCell.reuseID)
         collectionView.register(MyHabitsCollectionViewCell.self, forCellWithReuseIdentifier: MyHabitsCollectionViewCell.reuseID)
         collectionView.delegate = self
@@ -43,18 +43,11 @@ class MyHabitsViewController: UIViewController, UpdateCollectionProtocol {
     
     //MARK: - Lifecycle
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        view.backgroundColor = UIColor(named: "LigthGray2")
-//        setupNavigationBar()
-//    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        view.backgroundColor = .grayHeader
         onCollectionUpdate()
         setupLayout()
-
         navigationController?.navigationBar.isHidden = true
     }
     
@@ -93,7 +86,6 @@ private extension MyHabitsViewController {
     
     @objc func tapAddButton() {
         let viewController = CreateHabitsViewController()
-        let updateCollectionCallback: Void = habitsCollectionView.reloadData()
         viewController.updateCollectionCallback = self
         viewController.modalPresentationStyle = .fullScreen
         viewController.modalTransitionStyle = .coverVertical
