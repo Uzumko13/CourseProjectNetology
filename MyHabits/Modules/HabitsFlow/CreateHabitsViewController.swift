@@ -7,7 +7,7 @@ enum HabitEditionState {
     case edition
 }
 
-class CreateHabitsViewController: UIViewController {
+final class CreateHabitsViewController: UIViewController {
     
     //MARK: Properties and Views
     

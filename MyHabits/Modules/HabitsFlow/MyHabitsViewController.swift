@@ -1,7 +1,7 @@
 
 import UIKit
 
-class MyHabitsViewController: UIViewController, UpdateCollectionProtocol {
+final class MyHabitsViewController: UIViewController, UpdateCollectionProtocol {
     
     private lazy var habitStore: HabitsStore = HabitsStore.shared
     

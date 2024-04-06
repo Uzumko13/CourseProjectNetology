@@ -1,7 +1,7 @@
 
 import UIKit
 
-class DetailsHabitsViewController: UIViewController, HabitDetailsViewProtocol {
+final class DetailsHabitsViewController: UIViewController, HabitDetailsViewProtocol {
     
     //MARK: - Properties
     
