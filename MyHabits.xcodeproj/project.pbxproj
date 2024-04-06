@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD48BB6A2BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48BB692BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift */; };
+		DD48BB6C2BBF4BA2002F1680 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48BB6B2BBF4BA2002F1680 /* Protocols.swift */; };
 		DD7803BD2BA8D513007770A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803BC2BA8D513007770A1 /* AppDelegate.swift */; };
 		DD7803BF2BA8D513007770A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */; };
 		DD7803C62BA8D515007770A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7803C52BA8D515007770A1 /* Assets.xcassets */; };
 		DD7803C92BA8D515007770A1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DD7803C82BA8D515007770A1 /* Base */; };
 		DD7803D12BA8D63D007770A1 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D02BA8D63D007770A1 /* InfoViewController.swift */; };
-		DD7803D32BA8D656007770A1 /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D22BA8D656007770A1 /* HabitsViewController.swift */; };
-		DD7803D92BAA37B3007770A1 /* InfoPostExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D82BAA37B3007770A1 /* InfoPostExample.swift */; };
+		DD7803D32BA8D656007770A1 /* MyHabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D22BA8D656007770A1 /* MyHabitsViewController.swift */; };
+		DD7803D92BAA37B3007770A1 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803D82BAA37B3007770A1 /* Info.swift */; };
 		DD7803DC2BAB1953007770A1 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803DB2BAB1953007770A1 /* TabViewController.swift */; };
 		DD7803E52BAB1CBD007770A1 /* HabitsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803E42BAB1CBD007770A1 /* HabitsStore.swift */; };
+		DD7803E92BACBE65007770A1 /* DetailsHabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803E82BACBE65007770A1 /* DetailsHabitsViewController.swift */; };
+		DD7803EE2BACD7A6007770A1 /* CreateHabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803ED2BACD7A6007770A1 /* CreateHabitsViewController.swift */; };
+		DD7803F02BACD846007770A1 /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7803EF2BACD845007770A1 /* HabitsViewController.swift */; };
+		DDCBFDBF2BADFD8A002E8FA0 /* ProgressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCBFDBE2BADFD8A002E8FA0 /* ProgressCollectionViewCell.swift */; };
+		DDCBFDC22BADFE0E002E8FA0 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCBFDC12BADFE0E002E8FA0 /* Extentions.swift */; };
+		DDCBFDC42BAE151F002E8FA0 /* MyHabitsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCBFDC32BAE151F002E8FA0 /* MyHabitsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD48BB692BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHabitsTableViewCell.swift; sourceTree = "<group>"; };
+		DD48BB6B2BBF4BA2002F1680 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		DD7803B92BA8D513007770A1 /* MyHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7803BC2BA8D513007770A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD7803BE2BA8D513007770A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,10 +36,16 @@
 		DD7803C82BA8D515007770A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD7803CA2BA8D515007770A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7803D02BA8D63D007770A1 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		DD7803D22BA8D656007770A1 /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
-		DD7803D82BAA37B3007770A1 /* InfoPostExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPostExample.swift; sourceTree = "<group>"; };
+		DD7803D22BA8D656007770A1 /* MyHabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHabitsViewController.swift; sourceTree = "<group>"; };
+		DD7803D82BAA37B3007770A1 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		DD7803DB2BAB1953007770A1 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		DD7803E42BAB1CBD007770A1 /* HabitsStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitsStore.swift; path = "../../../../iosui-diplom-main/HabitsStore.swift"; sourceTree = "<group>"; };
+		DD7803E82BACBE65007770A1 /* DetailsHabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHabitsViewController.swift; sourceTree = "<group>"; };
+		DD7803ED2BACD7A6007770A1 /* CreateHabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitsViewController.swift; sourceTree = "<group>"; };
+		DD7803EF2BACD845007770A1 /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
+		DDCBFDBE2BADFD8A002E8FA0 /* ProgressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDCBFDC12BADFE0E002E8FA0 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		DDCBFDC32BAE151F002E8FA0 /* MyHabitsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHabitsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +100,13 @@
 			isa = PBXGroup;
 			children = (
 				DD7803E42BAB1CBD007770A1 /* HabitsStore.swift */,
-				DD7803D22BA8D656007770A1 /* HabitsViewController.swift */,
+				DD7803D22BA8D656007770A1 /* MyHabitsViewController.swift */,
+				DDCBFDC32BAE151F002E8FA0 /* MyHabitsCollectionViewCell.swift */,
+				DD7803EF2BACD845007770A1 /* HabitsViewController.swift */,
+				DDCBFDBE2BADFD8A002E8FA0 /* ProgressCollectionViewCell.swift */,
+				DD7803E82BACBE65007770A1 /* DetailsHabitsViewController.swift */,
+				DD7803ED2BACD7A6007770A1 /* CreateHabitsViewController.swift */,
+				DD48BB692BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift */,
 			);
 			path = HabitsFlow;
 			sourceTree = "<group>";
@@ -92,6 +114,7 @@
 		DD7803DE2BAB1BEB007770A1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DDCBFDC02BADFDF6002E8FA0 /* Extension */,
 				DD7803DA2BAB1498007770A1 /* AppDelegate */,
 				DD7803E12BAB1C23007770A1 /* InfoFlow */,
 				DD7803DD2BAB1BD8007770A1 /* HabitsFlow */,
@@ -111,9 +134,18 @@
 			isa = PBXGroup;
 			children = (
 				DD7803D02BA8D63D007770A1 /* InfoViewController.swift */,
-				DD7803D82BAA37B3007770A1 /* InfoPostExample.swift */,
+				DD7803D82BAA37B3007770A1 /* Info.swift */,
 			);
 			name = InfoFlow;
+			sourceTree = "<group>";
+		};
+		DDCBFDC02BADFDF6002E8FA0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DDCBFDC12BADFE0E002E8FA0 /* Extentions.swift */,
+				DD48BB6B2BBF4BA2002F1680 /* Protocols.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,13 +218,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD48BB6C2BBF4BA2002F1680 /* Protocols.swift in Sources */,
 				DD7803E52BAB1CBD007770A1 /* HabitsStore.swift in Sources */,
 				DD7803BD2BA8D513007770A1 /* AppDelegate.swift in Sources */,
 				DD7803D12BA8D63D007770A1 /* InfoViewController.swift in Sources */,
+				DD7803F02BACD846007770A1 /* HabitsViewController.swift in Sources */,
+				DD7803EE2BACD7A6007770A1 /* CreateHabitsViewController.swift in Sources */,
+				DDCBFDBF2BADFD8A002E8FA0 /* ProgressCollectionViewCell.swift in Sources */,
 				DD7803BF2BA8D513007770A1 /* SceneDelegate.swift in Sources */,
-				DD7803D92BAA37B3007770A1 /* InfoPostExample.swift in Sources */,
+				DDCBFDC42BAE151F002E8FA0 /* MyHabitsCollectionViewCell.swift in Sources */,
+				DD48BB6A2BBF3C6D002F1680 /* DetailsHabitsTableViewCell.swift in Sources */,
+				DD7803D92BAA37B3007770A1 /* Info.swift in Sources */,
+				DDCBFDC22BADFE0E002E8FA0 /* Extentions.swift in Sources */,
 				DD7803DC2BAB1953007770A1 /* TabViewController.swift in Sources */,
-				DD7803D32BA8D656007770A1 /* HabitsViewController.swift in Sources */,
+				DD7803E92BACBE65007770A1 /* DetailsHabitsViewController.swift in Sources */,
+				DD7803D32BA8D656007770A1 /* MyHabitsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  MyHabits
-//
-//  Created by Иван Беляев on 18.03.2024.
-//
 
 import UIKit
 

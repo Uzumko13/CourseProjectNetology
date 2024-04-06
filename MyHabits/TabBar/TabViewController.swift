@@ -1,9 +1,3 @@
-//
-//  TabViewController.swift
-//  MyHabits
-//
-//  Created by Иван Беляев on 20.03.2024.
-//
 
 import UIKit
 
@@ -25,7 +19,7 @@ class TabBarViewController: UITabBarController {
     
     private func setupUIController() {
         
-        habitsViewController = UINavigationController.init(rootViewController: HabitsViewController())
+        habitsViewController = UINavigationController.init(rootViewController: MyHabitsViewController())
         infoViewController = UINavigationController.init(rootViewController: InfoViewController())
         
         self.viewControllers = [
@@ -42,18 +36,6 @@ class TabBarViewController: UITabBarController {
         habitsViewController.tabBarItem = habits
         infoViewController.tabBarItem = info
         UITabBar.appearance().tintColor = UIColor(named: "PurpleHabits")
-        UITabBar.appearance().backgroundColor = UIColor(named: "LigthGray")
+        UITabBar.appearance().backgroundColor = UIColor(named: "GrayTabBar")
     }
 }
-
-//MARK:  - Extension
-
-//extension TabBarViewController: UITabBarControllerDelegate {
-//    
-//    func tabBarController(
-//        _ tabBarController: UITabBarController,
-//        didSelect viewController: UIViewController
-//    ) {
-//        <#code#>
-//    }
-//}
