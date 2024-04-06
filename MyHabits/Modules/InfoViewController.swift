@@ -5,15 +5,15 @@ final class InfoViewController: UIViewController {
     
     //MARK: - Info Data
     
-    private var infoTitle = InfoData.title3
-    private var info = InfoData.infoText
+    private lazy var infoTitle = InfoData.title3
+    private lazy var info = InfoData.infoText
     
     //MARK: Subviews
     
-    private let scrollView = UIScrollView()
-    private let contentView = UIView()
-    private let titleInfo = UILabel()
-    private let textInfo = UILabel()
+    private lazy var scrollView = UIScrollView()
+    private lazy var contentView = UIView()
+    private lazy var titleInfo = UILabel()
+    private lazy var textInfo = UILabel()
 
     
     // MARK: - Lifecycle
