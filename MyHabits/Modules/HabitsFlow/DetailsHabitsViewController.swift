@@ -89,6 +89,7 @@ private extension DetailsHabitsViewController {
 }
 
 extension DetailsHabitsViewController: DetailsHabitsViewProtocol {
+    
     func onHabitDelete() {
         navigationController?.popToRootViewController(animated: true)
     }
